@@ -1,0 +1,9 @@
+{% if userVitaList %}
+    <ul>
+    {% for vita in userVitaList %}
+        <li><a href="/vita/{{ vita.id }}/">{{ vita.title }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
